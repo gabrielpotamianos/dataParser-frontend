@@ -1,0 +1,43 @@
+.filter-bar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;   /* safe horizontal gutter */
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s;
+  z-index: 100;
+}
+.filter-bar-wrapper:hover,
+.filter-bar-wrapper:focus-within {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.filter-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.filter-bar input {
+  width: 100%;
+  height: 50px;
+  border: none; /* remove all borders */
+
+  box-sizing: border-box;
+  background: transparent;
+  text-align: center; /* centers both placeholder and text */
+  line-height: 50px;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.5px;
+}
+
+.filter-bar input:focus {
+  outline: none;
+  box-shadow: inset 0 -1.5px 0 0 #ccc;
+}

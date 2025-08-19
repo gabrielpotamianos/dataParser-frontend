@@ -1,0 +1,60 @@
+.candidate-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.header-text .candidate-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
+}
+.candidate-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+.candidate-location {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0;
+}
+.candidate-headline {
+  font-size: 0.875rem;
+  color: #777;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* show only 3 lines */
+  overflow: hidden;
+}
+.candidate-skills {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+.skill-badge {
+  padding: 0.2rem 0.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.skill-badge-not-found {
+  padding: 0.2rem 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  user-select: none;
+  color: #ffffff;
+}
+
+
+.candidate-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
